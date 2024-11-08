@@ -48,18 +48,18 @@ const SkillsPage = () => {
             <motion.div
               key={skill.name}
               variants={itemVariants}
-              className="flex flex-col items-center justify-center p-6 transition-all duration-300 bg-navy-900 bg-opacity-40 backdrop-blur-sm rounded-xl hover:bg-opacity-50 hover:transform hover:scale-105"
+              className="flex flex-col items-center justify-center p-6 transition-all duration-300 bg-navy-900 bg-opacity-40 backdrop-blur-sm rounded-xl hover:bg-opacity-50 group"
             >
-              <div className="relative w-12 h-12 mb-3">
+              <div className="relative w-12 h-12 mb-3 transition-transform duration-300 transform group-hover:scale-110 group-hover:rotate-3">
                 <Image
                   src={skill.icon}
                   alt={skill.name}
                   fill
-                  className="object-contain"
+                  className="object-contain animate-pulse-subtle"
                   unoptimized
                 />
               </div>
-              <p className="text-sm font-medium text-center text-white">
+              <p className="text-sm font-medium text-center text-white transition-all duration-300 group-hover:text-blue-400">
                 {skill.name}
               </p>
             </motion.div>
