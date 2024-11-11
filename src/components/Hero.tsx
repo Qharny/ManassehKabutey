@@ -34,7 +34,7 @@ const Hero = () => {
                                 nb_sides: 5 // Number of sides for polygon shapes
                             },
                             image: {
-                                src: "/vercel.svg", // Image for particles
+                                src: "/globe.svg", // Image for particles
                                 width: 100,
                                 height: 100
                             }
